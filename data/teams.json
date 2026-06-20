@@ -1,0 +1,1002 @@
+[
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_18",
+    "squad_score": -0.524,
+    "points": 19.1783,
+    "expected_points": 34.6826,
+    "residual": -15.5043,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_06",
+    "squad_score": 0.3125,
+    "points": 43.6906,
+    "expected_points": 55.2155,
+    "residual": -11.5249,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_03",
+    "squad_score": -0.2423,
+    "points": 31.8996,
+    "expected_points": 41.5976,
+    "residual": -9.6981,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_03",
+    "squad_score": -0.2808,
+    "points": 31.6617,
+    "expected_points": 40.6531,
+    "residual": -8.9914,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_12",
+    "squad_score": 0.5135,
+    "points": 51.2504,
+    "expected_points": 60.148,
+    "residual": -8.8976,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_10",
+    "squad_score": 0.557,
+    "points": 52.3708,
+    "expected_points": 61.2153,
+    "residual": -8.8445,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_10",
+    "squad_score": 0.2457,
+    "points": 45.5556,
+    "expected_points": 53.5738,
+    "residual": -8.0182,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_17",
+    "squad_score": 0.2967,
+    "points": 46.859,
+    "expected_points": 54.828,
+    "residual": -7.9691,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_05",
+    "squad_score": -0.3622,
+    "points": 30.9628,
+    "expected_points": 38.654,
+    "residual": -7.6912,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_16",
+    "squad_score": -0.2921,
+    "points": 32.7477,
+    "expected_points": 40.3742,
+    "residual": -7.6265,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_10",
+    "squad_score": 0.5143,
+    "points": 53.0117,
+    "expected_points": 60.167,
+    "residual": -7.1553,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_05",
+    "squad_score": -0.3233,
+    "points": 32.689,
+    "expected_points": 39.6096,
+    "residual": -6.9205,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_08",
+    "squad_score": -0.1349,
+    "points": 37.6455,
+    "expected_points": 44.2337,
+    "residual": -6.5882,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_19",
+    "squad_score": -0.1659,
+    "points": 37.7259,
+    "expected_points": 43.4716,
+    "residual": -5.7457,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_18",
+    "squad_score": -0.6148,
+    "points": 27.0779,
+    "expected_points": 32.4554,
+    "residual": -5.3775,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_08",
+    "squad_score": 0.1372,
+    "points": 45.6082,
+    "expected_points": 50.9129,
+    "residual": -5.3047,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_06",
+    "squad_score": 0.0288,
+    "points": 43.2117,
+    "expected_points": 48.2513,
+    "residual": -5.0396,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_07",
+    "squad_score": 1.1086,
+    "points": 70.1866,
+    "expected_points": 74.7532,
+    "residual": -4.5667,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_07",
+    "squad_score": 0.953,
+    "points": 66.3885,
+    "expected_points": 70.9353,
+    "residual": -4.5469,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_02",
+    "squad_score": 0.0406,
+    "points": 44.1063,
+    "expected_points": 48.541,
+    "residual": -4.4347,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_15",
+    "squad_score": 0.3345,
+    "points": 51.3746,
+    "expected_points": 55.7543,
+    "residual": -4.3797,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_14",
+    "squad_score": 0.2592,
+    "points": 49.789,
+    "expected_points": 53.9059,
+    "residual": -4.1169,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_09",
+    "squad_score": -0.0616,
+    "points": 41.9446,
+    "expected_points": 46.0325,
+    "residual": -4.088,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_15",
+    "squad_score": 0.6912,
+    "points": 60.5241,
+    "expected_points": 64.5089,
+    "residual": -3.9848,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_06",
+    "squad_score": -0.0564,
+    "points": 42.1823,
+    "expected_points": 46.1593,
+    "residual": -3.977,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_13",
+    "squad_score": -0.1893,
+    "points": 39.2133,
+    "expected_points": 42.8985,
+    "residual": -3.6852,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_00",
+    "squad_score": 0.2633,
+    "points": 50.4042,
+    "expected_points": 54.0076,
+    "residual": -3.6034,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_12",
+    "squad_score": 0.4555,
+    "points": 55.3353,
+    "expected_points": 58.7243,
+    "residual": -3.389,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_17",
+    "squad_score": -0.0386,
+    "points": 43.3793,
+    "expected_points": 46.5965,
+    "residual": -3.2172,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_16",
+    "squad_score": -0.524,
+    "points": 31.522,
+    "expected_points": 34.6834,
+    "residual": -3.1614,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_19",
+    "squad_score": -0.6633,
+    "points": 28.1762,
+    "expected_points": 31.2635,
+    "residual": -3.0873,
+    "signal": "OUTPERFORMER (buy)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_19",
+    "squad_score": -0.2717,
+    "points": 38.0418,
+    "expected_points": 40.8751,
+    "residual": -2.8334,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_17",
+    "squad_score": 0.0038,
+    "points": 44.8277,
+    "expected_points": 47.6368,
+    "residual": -2.809,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_14",
+    "squad_score": 0.0616,
+    "points": 46.367,
+    "expected_points": 49.0553,
+    "residual": -2.6883,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_12",
+    "squad_score": 0.2413,
+    "points": 50.7855,
+    "expected_points": 53.4664,
+    "residual": -2.6809,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_08",
+    "squad_score": -0.0959,
+    "points": 42.5303,
+    "expected_points": 45.19,
+    "residual": -2.6597,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_03",
+    "squad_score": -0.2309,
+    "points": 39.223,
+    "expected_points": 41.8777,
+    "residual": -2.6547,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_18",
+    "squad_score": -0.8727,
+    "points": 23.5974,
+    "expected_points": 26.1254,
+    "residual": -2.5279,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_12",
+    "squad_score": 0.2678,
+    "points": 52.2068,
+    "expected_points": 54.1179,
+    "residual": -1.911,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_04",
+    "squad_score": -0.0551,
+    "points": 44.7877,
+    "expected_points": 46.1916,
+    "residual": -1.4039,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_17",
+    "squad_score": -0.3047,
+    "points": 38.7147,
+    "expected_points": 40.0671,
+    "residual": -1.3524,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_02",
+    "squad_score": -0.1465,
+    "points": 42.6711,
+    "expected_points": 43.9497,
+    "residual": -1.2786,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_06",
+    "squad_score": 0.1615,
+    "points": 50.3147,
+    "expected_points": 51.5095,
+    "residual": -1.1948,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_16",
+    "squad_score": -0.7224,
+    "points": 28.778,
+    "expected_points": 29.8136,
+    "residual": -1.0356,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_02",
+    "squad_score": 0.0787,
+    "points": 48.5169,
+    "expected_points": 49.4766,
+    "residual": -0.9598,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_01",
+    "squad_score": 0.4786,
+    "points": 58.8801,
+    "expected_points": 59.2915,
+    "residual": -0.4113,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_08",
+    "squad_score": -0.5217,
+    "points": 34.4663,
+    "expected_points": 34.7396,
+    "residual": -0.2733,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_01",
+    "squad_score": 0.2893,
+    "points": 54.3803,
+    "expected_points": 54.6456,
+    "residual": -0.2653,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_01",
+    "squad_score": 0.3205,
+    "points": 55.1834,
+    "expected_points": 55.411,
+    "residual": -0.2276,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_04",
+    "squad_score": 0.1477,
+    "points": 51.1054,
+    "expected_points": 51.1691,
+    "residual": -0.0637,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_18",
+    "squad_score": -0.6824,
+    "points": 30.7519,
+    "expected_points": 30.7952,
+    "residual": -0.0433,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_07",
+    "squad_score": 0.8048,
+    "points": 67.3789,
+    "expected_points": 67.2987,
+    "residual": 0.0803,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_08",
+    "squad_score": -0.1956,
+    "points": 42.8689,
+    "expected_points": 42.7445,
+    "residual": 0.1244,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_16",
+    "squad_score": -0.2983,
+    "points": 40.5936,
+    "expected_points": 40.2231,
+    "residual": 0.3705,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_09",
+    "squad_score": -0.1538,
+    "points": 44.1815,
+    "expected_points": 43.7692,
+    "residual": 0.4123,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_09",
+    "squad_score": -0.0827,
+    "points": 45.9498,
+    "expected_points": 45.5151,
+    "residual": 0.4348,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_00",
+    "squad_score": -0.0501,
+    "points": 46.796,
+    "expected_points": 46.3157,
+    "residual": 0.4803,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_14",
+    "squad_score": 0.1858,
+    "points": 52.6784,
+    "expected_points": 52.1045,
+    "residual": 0.5739,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_18",
+    "squad_score": -0.9442,
+    "points": 24.9899,
+    "expected_points": 24.3697,
+    "residual": 0.6202,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_19",
+    "squad_score": -0.3675,
+    "points": 39.5253,
+    "expected_points": 38.5251,
+    "residual": 1.0002,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_00",
+    "squad_score": 0.023,
+    "points": 49.427,
+    "expected_points": 48.1085,
+    "residual": 1.3186,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_09",
+    "squad_score": 0.1192,
+    "points": 52.2027,
+    "expected_points": 50.4706,
+    "residual": 1.7321,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_11",
+    "squad_score": 0.3214,
+    "points": 57.6445,
+    "expected_points": 55.4342,
+    "residual": 2.2102,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_13",
+    "squad_score": -0.2093,
+    "points": 44.626,
+    "expected_points": 42.4075,
+    "residual": 2.2185,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_04",
+    "squad_score": -0.2348,
+    "points": 44.182,
+    "expected_points": 41.7824,
+    "residual": 2.3996,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_11",
+    "squad_score": 0.3017,
+    "points": 57.3786,
+    "expected_points": 54.9502,
+    "residual": 2.4284,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_07",
+    "squad_score": 0.4311,
+    "points": 60.6487,
+    "expected_points": 58.1245,
+    "residual": 2.5242,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_05",
+    "squad_score": -0.3413,
+    "points": 41.7256,
+    "expected_points": 39.1679,
+    "residual": 2.5577,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_19",
+    "squad_score": -0.6192,
+    "points": 35.0287,
+    "expected_points": 32.3466,
+    "residual": 2.6822,
+    "signal": "fair"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_15",
+    "squad_score": 0.4536,
+    "points": 61.7724,
+    "expected_points": 58.6782,
+    "residual": 3.0943,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_10",
+    "squad_score": 0.3177,
+    "points": 58.468,
+    "expected_points": 55.3421,
+    "residual": 3.126,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_13",
+    "squad_score": -0.5024,
+    "points": 38.7857,
+    "expected_points": 35.2141,
+    "residual": 3.5716,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_07",
+    "squad_score": 0.9745,
+    "points": 75.0625,
+    "expected_points": 71.4631,
+    "residual": 3.5994,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_12",
+    "squad_score": 0.0964,
+    "points": 53.8753,
+    "expected_points": 49.9105,
+    "residual": 3.9648,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_02",
+    "squad_score": -0.1008,
+    "points": 49.1529,
+    "expected_points": 45.07,
+    "residual": 4.0829,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_14",
+    "squad_score": 0.1027,
+    "points": 54.3425,
+    "expected_points": 50.0647,
+    "residual": 4.2778,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_00",
+    "squad_score": 0.2361,
+    "points": 57.6369,
+    "expected_points": 53.3384,
+    "residual": 4.2985,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_10",
+    "squad_score": 0.3857,
+    "points": 61.5799,
+    "expected_points": 57.0109,
+    "residual": 4.569,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_17",
+    "squad_score": -0.0306,
+    "points": 51.4328,
+    "expected_points": 46.7942,
+    "residual": 4.6386,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_11",
+    "squad_score": 0.1226,
+    "points": 55.2518,
+    "expected_points": 50.5527,
+    "residual": 4.6991,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_00",
+    "squad_score": -0.1984,
+    "points": 47.4032,
+    "expected_points": 42.6755,
+    "residual": 4.7277,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_16",
+    "squad_score": -0.1216,
+    "points": 49.4823,
+    "expected_points": 44.5591,
+    "residual": 4.9232,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_06",
+    "squad_score": 0.3001,
+    "points": 59.9286,
+    "expected_points": 54.9107,
+    "residual": 5.018,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_13",
+    "squad_score": -0.2635,
+    "points": 46.2242,
+    "expected_points": 41.0786,
+    "residual": 5.1457,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_01",
+    "squad_score": 0.2317,
+    "points": 58.4538,
+    "expected_points": 53.2317,
+    "residual": 5.2221,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_09",
+    "squad_score": -0.2735,
+    "points": 46.0817,
+    "expected_points": 40.832,
+    "residual": 5.2497,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_05",
+    "squad_score": -0.7394,
+    "points": 34.9481,
+    "expected_points": 29.3963,
+    "residual": 5.5519,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_11",
+    "squad_score": 0.7084,
+    "points": 70.8117,
+    "expected_points": 64.9326,
+    "residual": 5.8791,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_04",
+    "squad_score": -0.2081,
+    "points": 49.2379,
+    "expected_points": 42.4366,
+    "residual": 6.8013,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_04",
+    "squad_score": -0.1725,
+    "points": 50.3245,
+    "expected_points": 43.3111,
+    "residual": 7.0134,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_13",
+    "squad_score": -0.3155,
+    "points": 47.1682,
+    "expected_points": 39.8001,
+    "residual": 7.3681,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2023",
+    "team": "Team_14",
+    "squad_score": 0.0339,
+    "points": 56.1382,
+    "expected_points": 48.376,
+    "residual": 7.7622,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_03",
+    "squad_score": -0.5994,
+    "points": 41.4555,
+    "expected_points": 32.8329,
+    "residual": 8.6226,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_05",
+    "squad_score": -0.4638,
+    "points": 44.9787,
+    "expected_points": 36.1611,
+    "residual": 8.8176,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2024",
+    "team": "Team_15",
+    "squad_score": 0.4179,
+    "points": 66.9521,
+    "expected_points": 57.8025,
+    "residual": 9.1496,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_03",
+    "squad_score": -0.1609,
+    "points": 52.974,
+    "expected_points": 43.5956,
+    "residual": 9.3784,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2025",
+    "team": "Team_02",
+    "squad_score": -0.1415,
+    "points": 54.1038,
+    "expected_points": 44.0707,
+    "residual": 10.0331,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_15",
+    "squad_score": 0.7714,
+    "points": 77.4504,
+    "expected_points": 66.479,
+    "residual": 10.9714,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2022",
+    "team": "Team_11",
+    "squad_score": 0.2037,
+    "points": 64.31,
+    "expected_points": 52.5442,
+    "residual": 11.7659,
+    "signal": "regression risk (fade)"
+  },
+  {
+    "league": "ENG-Premier League",
+    "season": "2021",
+    "team": "Team_01",
+    "squad_score": 0.2554,
+    "points": 66.733,
+    "expected_points": 53.814,
+    "residual": 12.919,
+    "signal": "regression risk (fade)"
+  }
+]

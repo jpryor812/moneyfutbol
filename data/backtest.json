@@ -1,0 +1,24 @@
+{
+  "min_minutes": 270,
+  "models": [
+    {
+      "key": "A_points",
+      "label": "Raw points (baseline)",
+      "mean_r2": 0.5463,
+      "mean_mae": 5.5518
+    },
+    {
+      "key": "B_squad",
+      "label": "Squad score (model)",
+      "mean_r2": 0.5598,
+      "mean_mae": 5.5795
+    },
+    {
+      "key": "C_both",
+      "label": "Points + squad score",
+      "mean_r2": 0.5701,
+      "mean_mae": 5.4442
+    }
+  ],
+  "note": "Higher R2 / lower MAE = better at predicting NEXT-season points. If B_squad or C_both beat A_points, the model adds signal beyond the table."
+}

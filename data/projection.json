@@ -1,0 +1,162 @@
+[
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_07",
+    "points": 75.0625,
+    "squad_score": 0.9745,
+    "projected_points_next": 67.3048,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_10",
+    "points": 53.0117,
+    "squad_score": 0.5143,
+    "projected_points_next": 55.2152,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_11",
+    "points": 57.3786,
+    "squad_score": 0.3017,
+    "projected_points_next": 53.8139,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_01",
+    "points": 54.3803,
+    "squad_score": 0.2893,
+    "projected_points_next": 52.7971,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_15",
+    "points": 51.3746,
+    "squad_score": 0.3345,
+    "projected_points_next": 52.4978,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_00",
+    "points": 50.4042,
+    "squad_score": 0.2633,
+    "projected_points_next": 51.3294,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_14",
+    "points": 54.3425,
+    "squad_score": 0.1027,
+    "projected_points_next": 50.4536,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_12",
+    "points": 53.8753,
+    "squad_score": 0.0964,
+    "projected_points_next": 50.2408,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_09",
+    "points": 52.2027,
+    "squad_score": 0.1192,
+    "projected_points_next": 50.0453,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_08",
+    "points": 45.6082,
+    "squad_score": 0.1372,
+    "projected_points_next": 48.3752,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_17",
+    "points": 51.4328,
+    "squad_score": -0.0306,
+    "projected_points_next": 47.952,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_02",
+    "points": 54.1038,
+    "squad_score": -0.1415,
+    "projected_points_next": 47.3328,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_04",
+    "points": 44.7877,
+    "squad_score": -0.0551,
+    "projected_points_next": 45.7353,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_06",
+    "points": 42.1823,
+    "squad_score": -0.0564,
+    "projected_points_next": 44.97,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_16",
+    "points": 40.5936,
+    "squad_score": -0.2983,
+    "projected_points_next": 41.4907,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_03",
+    "points": 31.8996,
+    "squad_score": -0.2423,
+    "projected_points_next": 39.692,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_05",
+    "points": 32.689,
+    "squad_score": -0.3233,
+    "projected_points_next": 38.9065,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_13",
+    "points": 38.7857,
+    "squad_score": -0.5024,
+    "projected_points_next": 38.4205,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_19",
+    "points": 35.0287,
+    "squad_score": -0.6192,
+    "projected_points_next": 35.8806,
+    "from_season": "2025"
+  },
+  {
+    "league": "ENG-Premier League",
+    "team": "Team_18",
+    "points": 30.7519,
+    "squad_score": -0.6824,
+    "projected_points_next": 33.8615,
+    "from_season": "2025"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "min_minutes": 270,
+  "roles": [
+    "GK",
+    "CB",
+    "FB",
+    "DM",
+    "CM",
+    "W",
+    "ST"
+  ],
+  "framework": {
+    "GK": {
+      "psxg_plus_minus_per90": 0.45,
+      "save_pct": 0.25,
+      "sweeper_actions_per90": 0.15,
+      "launch_completion_pct": 0.15
+    },
+    "CB": {
+      "aerial_win_pct": 0.25,
+      "pct_dribblers_tackled": 0.2,
+      "progressive_passes_per90": 0.25,
+      "interceptions_per90": 0.2,
+      "errors_per90": -0.1
+    },
+    "FB": {
+      "progressive_carries_per90": 0.25,
+      "crosses_into_box_per90": 0.2,
+      "take_ons_won_per90": 0.15,
+      "tackles_plus_int_per90": 0.25,
+      "xa_per90": 0.15
+    },
+    "DM": {
+      "progressive_passes_per90": 0.25,
+      "pass_completion_pct": 0.15,
+      "ball_recoveries_per90": 0.25,
+      "tackles_plus_int_per90": 0.25,
+      "pressure_regains_per90": 0.1
+    },
+    "CM": {
+      "xa_per90": 0.25,
+      "shot_creating_actions_per90": 0.25,
+      "progressive_passes_per90": 0.25,
+      "key_passes_per100": 0.15,
+      "npxg_per90": 0.1
+    },
+    "W": {
+      "npxg_plus_xa_per90": 0.3,
+      "take_ons_won_per90": 0.2,
+      "progressive_carries_per90": 0.2,
+      "shot_creating_actions_per90": 0.2,
+      "crosses_into_box_per90": 0.1
+    },
+    "ST": {
+      "npxg_per90": 0.35,
+      "npxg_per_shot": 0.25,
+      "goals_minus_xg_per90": 0.15,
+      "shot_creating_actions_per90": 0.15,
+      "aerial_win_pct": 0.1
+    }
+  },
+  "league_strength": {
+    "ENG-Premier League": 1.0,
+    "ESP-La Liga": 0.95,
+    "ITA-Serie A": 0.93,
+    "GER-Bundesliga": 0.93,
+    "FRA-Ligue 1": 0.88,
+    "POR-Primeira Liga": 0.75,
+    "NED-Eredivisie": 0.72,
+    "BEL-Pro League": 0.7
+  },
+  "metric_cols": [
+    "psxg_plus_minus_per90",
+    "save_pct",
+    "sweeper_actions_per90",
+    "launch_completion_pct",
+    "aerial_win_pct",
+    "pct_dribblers_tackled",
+    "progressive_passes_per90",
+    "interceptions_per90",
+    "errors_per90",
+    "progressive_carries_per90",
+    "crosses_into_box_per90",
+    "take_ons_won_per90",
+    "tackles_plus_int_per90",
+    "xa_per90",
+    "pass_completion_pct",
+    "ball_recoveries_per90",
+    "pressure_regains_per90",
+    "shot_creating_actions_per90",
+    "key_passes_per100",
+    "npxg_per90",
+    "npxg_plus_xa_per90",
+    "npxg_per_shot",
+    "goals_minus_xg_per90"
+  ],
+  "seasons": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "latest_season": "2025",
+  "leagues": [
+    "ENG-Premier League"
+  ]
+}

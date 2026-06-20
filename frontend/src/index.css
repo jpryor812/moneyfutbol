@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-pitch-900 text-chalk font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse at top, rgba(34, 197, 94, 0.08), transparent 60%),
+      theme('backgroundImage.pitch-stripes');
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-pitch-700/60 bg-pitch-800/60 backdrop-blur-sm;
+  }
+  .stat-num {
+    @apply font-mono tabular-nums;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+}
+
+/* Slim scrollbars to match the dark turf */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 197, 94, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

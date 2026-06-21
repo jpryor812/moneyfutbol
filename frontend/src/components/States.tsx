@@ -13,15 +13,15 @@ export function ErrorBox({ message }: { message: string }) {
       <p className="text-fade font-semibold">Couldn’t load data</p>
       <p className="mt-2 text-sm text-fair">{message}</p>
       <p className="mt-4 text-xs text-fair">
-        Did you run{' '}
+        From <code className="text-pitch-400">backend/</code>:{' '}
         <code className="rounded bg-pitch-900 px-1.5 py-0.5 text-pitch-400">
-          python3 backend/export_snapshot.py
-        </code>{' '}
-        and{' '}
-        <code className="rounded bg-pitch-900 px-1.5 py-0.5 text-pitch-400">
-          npm run sync-data
+          python pull_bundesliga_forwards.py
         </code>
-        ?
+        , then{' '}
+        <code className="rounded bg-pitch-900 px-1.5 py-0.5 text-pitch-400">
+          npm run dev
+        </code>{' '}
+        (syncs CSV automatically).
       </p>
     </div>
   )

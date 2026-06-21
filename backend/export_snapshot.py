@@ -1,9 +1,8 @@
 """
 export_snapshot.py
 ==================
-Runs make_synthetic() through the full pipeline and exports the results to
-JSON files in /data so the frontend has real data to render without a live
-FBref scrape.
+Runs the data loader of your choice through the full pipeline and exports the
+results to JSON files in /data for the frontend.
 
 IMPORTANT: this script does NOT modify any backend logic. It only *calls* the
 public functions in squad_model.py / data_loaders.py / backtest.py. The
@@ -13,16 +12,27 @@ build_squad_scores() uses internally -- so the numbers are guaranteed to match
 the model.
 
 Run:
-    python3 backend/export_snapshot.py
+    python export_snapshot.py                         # synthetic (offline)
+    python export_snapshot.py --source understat    # real Big-5 xG/xA data
+    python export_snapshot.py --source fbref        # real FBref (basic stats)
 """
 
+import argparse
 import json
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from data_loaders import make_synthetic, METRIC_COLS
+from data_loaders import (
+    DEFAULT_FBREF_LEAGUES,
+    DEFAULT_SEASONS,
+    DEFAULT_UNDERSTAT_LEAGUES,
+    METRIC_COLS,
+    load_fbref,
+    load_understat,
+    make_synthetic,
+)
 from squad_model import (
     build_squad_scores,
     map_position,
@@ -45,9 +55,11 @@ MIN_MINUTES = 270
 
 
 def _round(obj):
-    """Recursively round floats so JSON stays small + readable."""
-    if isinstance(obj, float):
-        return round(obj, 4)
+    """Recursively round floats; NaN/Inf become null for valid JSON."""
+    if isinstance(obj, (float, np.floating)):
+        if np.isnan(obj) or np.isinf(obj):
+            return None
+        return round(float(obj), 4)
     if isinstance(obj, dict):
         return {k: _round(v) for k, v in obj.items()}
     if isinstance(obj, list):
@@ -58,7 +70,7 @@ def _round(obj):
 def write_json(name: str, payload):
     path = DATA_DIR / name
     with open(path, "w") as f:
-        json.dump(_round(payload), f, indent=2)
+        json.dump(_round(payload), f, indent=2, allow_nan=False)
     print(f"  wrote {path.relative_to(DATA_DIR.parent)}  ({path.stat().st_size:,} bytes)")
 
 
@@ -76,10 +88,49 @@ def build_player_detail(player_df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _load_data(source: str, leagues: list[str] | None, seasons: list[str] | None):
+    if source == "synthetic":
+        print("Generating synthetic dataset...")
+        return make_synthetic()
+    if source == "understat":
+        lg = leagues or DEFAULT_UNDERSTAT_LEAGUES
+        ss = seasons or DEFAULT_SEASONS
+        print(f"Fetching Understat data ({len(lg)} leagues, seasons {ss})...")
+        return load_understat(lg, ss)
+    if source == "fbref":
+        lg = leagues or DEFAULT_FBREF_LEAGUES
+        ss = seasons or DEFAULT_SEASONS
+        print(f"Fetching FBref data ({len(lg)} leagues, seasons {ss})...")
+        print("  Note: FBref advanced metrics (xG, progressive passes, etc.) were")
+        print("  removed in 2026. Use --source understat for Big-5 xG data.")
+        return load_fbref(lg, ss)
+    raise ValueError(f"unknown source: {source}")
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Export squad model snapshot to /data")
+    parser.add_argument(
+        "--source",
+        choices=["synthetic", "understat", "fbref"],
+        default="synthetic",
+        help="data source (default: synthetic offline test data)",
+    )
+    parser.add_argument(
+        "--leagues",
+        nargs="+",
+        help="soccerdata league IDs (defaults depend on --source)",
+    )
+    parser.add_argument(
+        "--seasons",
+        nargs="+",
+        help='season codes, e.g. 2223 2324 (default: 2122–2425)',
+    )
+    args = parser.parse_args()
+
     DATA_DIR.mkdir(exist_ok=True)
-    print("Generating synthetic dataset...")
-    players, points = make_synthetic()
+    players, points = _load_data(args.source, args.leagues, args.seasons)
+    print(f"  {len(players):,} player rows, {len(points):,} team-season point rows")
+    print(f"  sample teams: {', '.join(sorted(players['team'].unique())[:5])} ...")
 
     # --- squad scores (model output) ---
     squad = build_squad_scores(players, min_minutes=MIN_MINUTES)
@@ -154,6 +205,7 @@ def main():
         "seasons": sorted(players["season"].unique().tolist()),
         "latest_season": str(latest_season),
         "leagues": sorted(players["league"].unique().tolist()),
+        "data_source": args.source,
     }
     write_json("meta.json", meta)
 

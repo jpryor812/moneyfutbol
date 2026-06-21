@@ -165,9 +165,16 @@ def zscore_within_role(df: pd.DataFrame, season_col="season") -> pd.DataFrame:
         z_col = f"z_{m}"
         df[z_col] = (
             df.groupby(["role", season_col])[m]
-              .transform(lambda s: (s - s.mean()) / s.std(ddof=0) if s.std(ddof=0) > 0 else 0.0)
+              .transform(_zscore_series)
         )
     return df
+
+
+def _zscore_series(s: pd.Series) -> pd.Series:
+    std = s.std(ddof=0)
+    if pd.isna(std) or std == 0:
+        return pd.Series(0.0, index=s.index)
+    return (s - s.mean()) / std
 
 def player_role_score(df: pd.DataFrame) -> pd.DataFrame:
     """Combine metric z-scores into one score per player using role weights."""

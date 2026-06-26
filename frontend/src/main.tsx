@@ -1,14 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { ForwardsTable } from './views/ForwardsTable.tsx'
 import { PlayerDetail } from './views/PlayerDetail.tsx'
 
 const router = createBrowserRouter([
+  { path: '/', element: <Navigate to="/bundesliga" replace /> },
   {
-    path: '/',
+    path: '/:studySlug',
     element: <App />,
     children: [
       { index: true, element: <ForwardsTable /> },

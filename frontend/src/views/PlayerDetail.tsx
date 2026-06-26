@@ -7,9 +7,9 @@ import { playerNameFromSlug } from '../lib/playerRoute'
 import { useForwardsCsv } from '../lib/useForwardsCsv'
 
 export function PlayerDetail() {
-  const { playerSlug } = useParams()
-  const { rows, columns, loading, error } = useForwardsCsv()
-  const playerName = playerNameFromSlug(playerSlug)
+  const { studySlug, playerSlug: slug } = useParams()
+  const { study, rows, columns, loading, error } = useForwardsCsv()
+  const playerName = playerNameFromSlug(slug)
 
   const playerRows = useMemo(
     () => (playerName ? rows.filter((r) => r.player === playerName) : []),
@@ -22,7 +22,7 @@ export function PlayerDetail() {
   if (playerRows.length === 0) {
     return (
       <div className="space-y-4">
-        <BackLink />
+        <BackLink studySlug={studySlug ?? study.slug} />
         <ErrorBox message={`No rows found for "${playerName}".`} />
       </div>
     )
@@ -36,7 +36,7 @@ export function PlayerDetail() {
 
   return (
     <div className="space-y-4">
-      <BackLink />
+      <BackLink studySlug={studySlug ?? study.slug} />
 
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight">{playerName}</h1>
@@ -60,10 +60,10 @@ export function PlayerDetail() {
   )
 }
 
-function BackLink() {
+function BackLink({ studySlug }: { studySlug: string }) {
   return (
     <Link
-      to="/"
+      to={`/${studySlug}`}
       className="inline-flex items-center gap-1 text-sm text-pitch-400 hover:text-pitch-300"
     >
       ← All players

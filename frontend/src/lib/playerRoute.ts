@@ -11,6 +11,6 @@ export function playerNameFromSlug(slug: string | undefined): string | null {
   }
 }
 
-export function playerPath(name: string): string {
-  return `/player/${playerSlug(name)}`
+export function playerPath(studySlug: string, name: string): string {
+  return `/${studySlug}/player/${playerSlug(name)}`
 }

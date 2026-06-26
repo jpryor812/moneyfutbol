@@ -93,13 +93,31 @@ export const COLUMN_HINTS: Record<string, string> = {
 
 export const FILTER_HINTS = {
   search: 'Filter rows where the player or team name contains your text (case-insensitive).',
-  league: 'Show only rows from one league — includes non-Bundesliga career seasons after a full-careers pull.',
+  league:
+    'Click a league to filter rows; click the active league again (or All) to show every league.',
   season: 'Show only one season — uses the end calendar year (e.g. 2025 = 2024-25).',
   wingerOnly:
     'Keep only rows flagged likely_winger (winger_score > 0). Heuristic, not confirmed L/R wingers.',
   sideReview:
     'Filter by your manual side_review tag from the CSV: L, R, central, or not yet reviewed.',
 } as const
+
+export const NON_SORTABLE_COLUMNS = ['league'] as const
+
+export function isSortableColumn(col: string): boolean {
+  return !(NON_SORTABLE_COLUMNS as readonly string[]).includes(col)
+}
+
+export function formatLeagueLabel(league: string): string {
+  return league
+    .replace(/^GER-/, '')
+    .replace(/^ENG-/, '')
+    .replace(/^ESP-/, '')
+    .replace(/^ITA-/, '')
+    .replace(/^FRA-/, '')
+    .replace(/^NED-/, '')
+    .replace(/^POR-/, '')
+}
 
 export function orderColumns(columns: string[]): string[] {
   const rest = columns.filter((c) => !PINNED.includes(c))

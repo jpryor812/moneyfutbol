@@ -2,11 +2,12 @@ import { useMemo, useState } from 'react'
 import { HoverTip } from '../components/HoverTip'
 import { Loading, ErrorBox } from '../components/States'
 import { PlayerStatsTable } from '../components/PlayerStatsTable'
-import { FILTER_HINTS } from '../lib/tableColumns'
+import { FILTER_HINTS, formatLeagueLabel } from '../lib/tableColumns'
+import { isAllStudies } from '../lib/studies'
 import { useForwardsCsv } from '../lib/useForwardsCsv'
 
 export function ForwardsTable() {
-  const { rows, columns, loading, error } = useForwardsCsv()
+  const { study, rows, columns, loading, error } = useForwardsCsv()
   const [search, setSearch] = useState('')
   const [league, setLeague] = useState('')
   const [season, setSeason] = useState('')
@@ -41,14 +42,24 @@ export function ForwardsTable() {
     })
   }, [rows, search, league, season, wingerOnly, side])
 
-  if (loading) return <Loading label="Loading bundesliga_forwards.csv…" />
+  if (loading) {
+    return (
+      <Loading
+        label={
+          isAllStudies(study.slug)
+            ? 'Loading all study CSVs…'
+            : `Loading ${study.csvFile}…`
+        }
+      />
+    )
+  }
   if (error) return <ErrorBox message={error} />
 
   return (
     <div className="space-y-4">
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight">
-          Bundesliga forwards — study panel
+          {isAllStudies(study.slug) ? 'All leagues' : study.shortLabel} forwards — study panel
         </h1>
         <p className="mt-1 text-sm text-fair">
           {filtered.length} of {rows.length} rows · hover column headers or filters for
@@ -69,20 +80,39 @@ export function ForwardsTable() {
             className="rounded-lg border border-pitch-600/60 bg-pitch-900/80 px-3 py-2 text-sm text-chalk outline-none focus:border-pitch-500"
           />
         </label>
-        <label className="flex flex-col gap-1 text-xs text-fair">
+        <label className="flex min-w-[200px] flex-col gap-1.5 text-xs text-fair sm:min-w-[280px]">
           <HoverTip text={FILTER_HINTS.league}>League</HoverTip>
-          <select
-            value={league}
-            onChange={(e) => setLeague(e.target.value)}
-            className="rounded-lg border border-pitch-600/60 bg-pitch-900/80 px-3 py-2 text-sm text-chalk"
-          >
-            <option value="">All</option>
-            {leagues.map((s) => (
-              <option key={s} value={s}>
-                {s.replace('GER-', '').replace('ENG-', '').replace('ESP-', '').replace('ITA-', '').replace('FRA-', '')}
-              </option>
-            ))}
-          </select>
+          <div className="flex flex-wrap gap-1.5">
+            <button
+              type="button"
+              onClick={() => setLeague('')}
+              className={`rounded-md border px-2.5 py-1 text-xs ${
+                !league
+                  ? 'border-pitch-500 bg-pitch-700 text-chalk'
+                  : 'border-pitch-600/60 bg-pitch-900/80 text-fair hover:text-chalk'
+              }`}
+            >
+              All
+            </button>
+            {leagues.map((lg) => {
+              const active = league === lg
+              return (
+                <button
+                  key={lg}
+                  type="button"
+                  onClick={() => setLeague(active ? '' : lg)}
+                  className={`rounded-md border px-2.5 py-1 text-xs ${
+                    active
+                      ? 'border-pitch-500 bg-pitch-700 text-chalk'
+                      : 'border-pitch-600/60 bg-pitch-900/80 text-fair hover:text-chalk'
+                  }`}
+                  title={active ? 'Click to show all leagues' : formatLeagueLabel(lg)}
+                >
+                  {formatLeagueLabel(lg)}
+                </button>
+              )
+            })}
+          </div>
         </label>
         <label className="flex flex-col gap-1 text-xs text-fair">
           <HoverTip text={FILTER_HINTS.season}>Season</HoverTip>
@@ -127,8 +157,8 @@ export function ForwardsTable() {
       <PlayerStatsTable
         rows={filtered}
         columns={columns}
-        defaultSortCol="winger_score"
-        defaultSortDir="desc"
+        defaultSortCol="player"
+        defaultSortDir="asc"
         linkPlayers
       />
     </div>

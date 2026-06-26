@@ -5,11 +5,13 @@ import { parseNum } from '../lib/csv'
 import {
   columnHint,
   columnLabel,
+  isSortableColumn,
   orderColumns,
   PINNED,
   renderCell,
 } from '../lib/tableColumns'
 import { playerPath } from '../lib/playerRoute'
+import { useForwardsCsv } from '../lib/useForwardsCsv'
 
 type SortDir = 'asc' | 'desc'
 
@@ -30,6 +32,7 @@ export function PlayerStatsTable({
   linkPlayers = false,
   hideColumns = [],
 } : Props) {
+  const { study } = useForwardsCsv()
   const [sortCol, setSortCol] = useState(defaultSortCol)
   const [sortDir, setSortDir] = useState<SortDir>(defaultSortDir)
 
@@ -72,16 +75,20 @@ export function PlayerStatsTable({
                   key={col}
                   className="whitespace-nowrap border-b border-pitch-600/50 px-3 py-2 font-semibold text-pitch-400"
                 >
-                  <button
-                    type="button"
-                    onClick={() => toggleSort(col)}
-                    className="flex items-center gap-1 hover:text-chalk"
-                  >
+                  {isSortableColumn(col) ? (
+                    <button
+                      type="button"
+                      onClick={() => toggleSort(col)}
+                      className="flex items-center gap-1 hover:text-chalk"
+                    >
+                      <HoverTip text={columnHint(col)}>{columnLabel(col)}</HoverTip>
+                      {sortCol === col && (
+                        <span className="text-[10px]">{sortDir === 'asc' ? '▲' : '▼'}</span>
+                      )}
+                    </button>
+                  ) : (
                     <HoverTip text={columnHint(col)}>{columnLabel(col)}</HoverTip>
-                    {sortCol === col && (
-                      <span className="text-[10px]">{sortDir === 'asc' ? '▲' : '▼'}</span>
-                    )}
-                  </button>
+                  )}
                 </th>
               ))}
             </tr>
@@ -101,7 +108,7 @@ export function PlayerStatsTable({
                   >
                     {col === 'player' && linkPlayers && row.player ? (
                       <Link
-                        to={playerPath(row.player)}
+                        to={playerPath(study.slug, row.player)}
                         className="text-pitch-400 underline decoration-pitch-600/60 underline-offset-2 hover:text-pitch-300"
                       >
                         {row.player}
